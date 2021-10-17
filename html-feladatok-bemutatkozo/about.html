@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About</title>
+
+    <SCRIPT LANGUAGE="JavaScript">
+
+        function uresCheck(mezo) {
+            var szoveg = mezo.value;
+            if (szoveg != "" && szoveg.length >= 5) return true;
+            else {
+                alert("A(z) " + mezo.name + " legalább 5 karakter!");
+                return false;
+            }
+        }
+
+        function emailCheck(mezo) {
+            var szoveg = mezo.value;
+            if (!(szoveg.indexOf('@') > 0 && szoveg.indexOf('@') < szoveg.length - 1)) {
+                alert("Hibás e-mail cím!");
+                return false;
+            }
+            else return true;
+        }
+        function ellenoriz() {
+            if (uresCheck(document.form.nev) && emailCheck(document.form.email)) {
+                /*document.form.action = "mailto:" + document.form.email.value;*/
+                return true;
+            }
+            else return false;
+        }
+    </SCRIPT>
+</head>
+
+<body>
+    <header id="header">
+        <div>
+            <h3>About</h3>
+        </div>
+        <nav>
+            <div id="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./works.html">Works</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <Li><a href="./about.html">About</a></Li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div id="kep3">
+                <img src="./img/ret02.jpg" width="550" alt="rét kép">
+            </div>
+            <div>
+                <div>
+                    <h3>Kedvenc időtöltésem:</h3>
+                </div>
+                <div class="behuzas1">
+                    <ul>
+                        <li>kerékpározás</li>
+                        <li>túrázás</li>
+                        <li>matematika feladatokat megoldása</li>
+                        <li>olvasás</li>
+                        <li>alvás</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Példaképeim:</h3>
+                </div>
+                <div class="behuzas1">
+                    <ol>
+                        <li><a href="https://hu.wikipedia.org/wiki/K%C5%91r%C3%B6si_Csoma_S%C3%A1ndor"
+                                target="_blank">Kőrösi Csoma Sándor</a></li>
+                        <li><a href="https://szentferencalapitvany.org/" target="_blank">Böjte Csaba szerzetes</a></li>
+                        <li><a href="https://akos.hu/" target="_blank">Ákos </a></li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <div>
+            <div class="box2">
+                <h3>Üzenet nekem</h3>
+                <form name="form" onSubmit="return ellenoriz()">
+                    Név: <input type="text" name="nev" required id="nev" placeholder="Kérem a neved!" /><br><br>
+                    E-mail: <input type="text" name="email" required id="email"
+                        placeholder="Kérem az email címed!" /><br><br>
+                    <div id="megjegyzes">Megjegyzés:<br> <textarea name="megjegyzes" required id="megjegyzes" cols="50"
+                            rows="5" maxlength="200"
+                            placeholder="Írd meg a véleményedet (max. 200 karakter!!"></textarea>
+                </form>
+                <div id="kuld"><input type="submit" value="küldés" /></div>
+            </div>
+
+            </form>
+        </div>
+        <div class="box2">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/z5GpEgJeyzU?start=3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div id="footer">
+            <button class="button"> <a class="button" href="#">Ugrás az oldal
+                    tetejére</a></button>
+        </div>
+    </footer>
+
+</body>
+
+</html>
