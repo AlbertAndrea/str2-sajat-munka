@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Tic-tac-toe</h1>
+    </div>
+    <div class="container">
+        <div class="cell" id="0_0" onClick="place(this)"></div>
+        <div class="cell" id="1_0" onClick="place(this)"></div>
+        <div class="cell" id="2_0" onClick="place(this)"></div>
+
+        <div class="cell" id="0_1" onClick="place(this)"></div>
+        <div class="cell" id="1_1" onClick="place(this)"></div>
+        <div class="cell" id="2_1" onclick="place(this)"></div>
+
+        <div class="cell" id="0_2" onClick="place(this)"></div>
+        <div class="cell" id="1_2" onClick="place(this)"></div>
+        <div class="cell" id="2_2" onClick="place(this)"></div>
+    </div>
+
+    <div id="winnerMessage" class="winnerMessage">
+        <span> &nbsp; </span>
+    </div>
+
+    <div onClick="reloadThePage()">
+        <button type="submit">
+            <h2>Play again!</h2>
+        </button>
+    </div>
+
+    <script type="text/javascript" src="./js/main.js" type="module"></script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+h1 {
+    text-align: center;
+    margin: 5px;
+}
+
+h2{
+    margin: 5px;
+}
+
+.cell {
+    box-sizing: border-box;
+    border: 2px solid rgb(255, 255, 255);
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 80px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    display: inline-block;
+    background-color: rgb(63, 109, 70);
+    border-radius: 10px;
+    vertical-align: middle;    
+}
+
+.cell:hover {
+    background-color: rgb(111, 170, 133);
+}
+
+.container {
+    width: 458px;
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: coral;
+    border-radius: 8px;
+    color:rgb(255, 255, 255);
+}
+
+button:hover {
+    background-color: rgb(253, 153, 116);
+}
+
+#winnerMessage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: rgba(192, 177, 8, 0.87);
+    border-radius: 10px;
+    width: 450px;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
