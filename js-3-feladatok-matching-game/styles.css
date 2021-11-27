@@ -1,0 +1,91 @@
+h1 {
+    font-family: 'Comforter Brush', cursive;
+    color: rgb(2, 60, 110);
+    text-align: center;
+    font-size: 3em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(212, 231, 248);
+}
+.info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-info {
+    color:rgb(2, 60, 110);
+    font-size: 2em;
+    text-align: center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    margin: 50px;
+    justify-content: center;
+}
+.card-container {
+    height: 175px;
+    width: 125px;
+    perspective: 1000px;
+}
+
+.card {
+    position: absolute;
+    background-color: rgb(107, 173, 8);
+    height: 175px;
+    width: 125px;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 2);
+}
+.card:hover {
+    background-color: rgb(141, 226, 12);
+}
+
+.back, .front {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.back {
+    transform: rotateY(180deg);
+}
+
+.img {
+    height: 175px;
+    width: 125px;
+}
+
+#end {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'Comforter Brush', cursive;
+    color:rgb(128, 8, 98);
+    font-weight: bold;
+}
+
+button {
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: rgb(253, 148, 109);
+    border-radius: 8px;
+    color:rgb(255, 255, 255);
+}
+
+button:hover {
+    background-color: rgb(250, 174, 146);
+}
+
+@media only screen and (max-width: 700px) {
+    .container {
+        grid-template-columns: repeat(4, auto);
+    }
+}
