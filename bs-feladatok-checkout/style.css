@@ -1,0 +1,15 @@
+body {
+    background-color: rgba(247, 250, 253, 0.918);
+}
+
+.bg-color-aa {
+    background-color: rgb(115, 114, 116);
+    width: 30px;
+    height: 30px;
+    border-radius: 13px;
+    font-size: 20px;
+    color:cornsilk;
+    margin: auto;
+    text-align: center;
+    box-sizing: border-box;
+}
