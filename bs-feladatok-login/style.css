@@ -1,0 +1,12 @@
+.bg-color-aa {
+    background-color: rgb(85, 26, 139);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 40px;
+    color:cornsilk;
+    margin: auto;
+}
+body {
+background-color: rgb(243, 239, 239);
+}
