@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+
+body {
+    background-image: url('assets/site/mapblue.jpg');
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.title {
+    font-size: 44px;
+    padding-bottom: 10px;
+}
+
+.bio {
+    color:white;
+    font-size: 18px;
+    text-align: left;
+    line-height: 130%;
+}
+
+.bioDiv {
+    padding: 5px 35px;
+    width: 80%;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0;
+    align-content: space-between;  
+}
+
+.names {
+    font-size: 12px;
+    color: rgb(99, 24, 24);
+    margin: 0;
+    text-transform: uppercase;
+    margin: 2px;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+}
+p:active {
+    color:rgb(22, 126, 22);
+}
+
+h3 {
+    margin: 0;
+    font-size: 24px;
+    text-align: left;
+    padding-left: 35px;
+}
+h2 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+.alap:active{
+    opacity: .5;
+}
+
+.names:hover {
+    cursor: pointer;
+    color:rgb(22, 126, 22);
+}
+
+.names:active {
+    color:rgb(22, 126, 22);
+}
+
+.aside {
+    position: fixed;
+    right: 0px;
+    width: 25%;
+    height: 96%;
+    top: 0;
+    color: #FFF;
+    padding: 2% 0.5% 0;
+    background-color: darkolivegreen;
+    align-content: auto;
+}
+
+.avatar {
+    width: 140px;
+}
+
+.alap {
+    padding-top: 20px;
+}
+
+.alap:hover {
+    background-color: rgb(209, 206, 206);
+    opacity: .5;
+    border-radius: 50%;
+}
+
+.alap:active {
+    background-color: rgb(209, 206, 206);
+    opacity: .5;
+    border-radius: 50%;
+}
+
+.search {
+    position: absolute;
+    top: 90%;
+    left: 20%;
+    background-color: white;
+    width: 210px;
+    height: 25px;
+}
+
+.inputSearch {
+    box-sizing: content-box;
+}
+
+span {
+    background-color: white;
+    color: grey;   
+}
+
+.search {
+    width: 185px;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    height: 25px;
+}
+
+
+
