@@ -1,27 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 
-
 body {
     background-image: url('assets/site/mapblue.jpg');
     text-align: center;
     font-family: 'Rubik', sans-serif;
-}
-
-.title {
-    font-size: 44px;
-    padding-bottom: 10px;
-}
-
-.bio {
-    color:white;
-    font-size: 18px;
-    text-align: left;
-    line-height: 130%;
-}
-
-.bioDiv {
-    padding: 5px 35px;
-    width: 80%;
 }
 
 .container {
@@ -30,6 +12,10 @@ body {
     width: 75%;
     margin: 0;
     align-content: space-between;  
+}
+
+.avatar {
+    width: 140px;
 }
 
 .names {
@@ -44,23 +30,38 @@ body {
 p {
     margin: 0;
 }
+
 p:active {
     color:rgb(22, 126, 22);
 }
 
 h3 {
     margin: 0;
-    font-size: 24px;
+    font-size: 22px;
     text-align: left;
     padding-left: 35px;
 }
+
 h2 {
-    margin-top: 0;
+    margin: 0;
     font-size: 32px;
+    padding-bottom: 10px;
 }
 
-.alap:active{
+.alap {
+    padding-top: 20px;
+}
+
+.alap:hover {
+    background-color: rgb(209, 206, 206);
     opacity: .5;
+    border-radius: 50%;
+}
+
+.alap:active {
+    background-color: rgb(209, 206, 206);
+    opacity: .5;
+    border-radius: 50%;
 }
 
 .names:hover {
@@ -84,24 +85,24 @@ h2 {
     align-content: auto;
 }
 
-.avatar {
-    width: 140px;
+.bio {
+    color:white;
+    font-size: 18px;
+    text-align: left;
+    line-height: 130%;
 }
 
-.alap {
-    padding-top: 20px;
+.bioDiv {
+    padding: 10px 35px;
+    width: 80%;
 }
 
-.alap:hover {
-    background-color: rgb(209, 206, 206);
-    opacity: .5;
-    border-radius: 50%;
+.house {
+    display: flex;
+    justify-content: space-between;
 }
-
-.alap:active {
-    background-color: rgb(209, 206, 206);
-    opacity: .5;
-    border-radius: 50%;
+.houseImg {
+    padding: 5px 30px 0 0;
 }
 
 .search {
