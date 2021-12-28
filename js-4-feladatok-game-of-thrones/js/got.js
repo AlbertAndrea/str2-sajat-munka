@@ -23,8 +23,6 @@ fetch('./json/got.json')
       return 0;
     });
 
-    console.log(arrJson);
-
     const div1 = document.createElement('div');
     div1.classList.toggle('container');
     body.append(div1);
@@ -44,7 +42,6 @@ fetch('./json/got.json')
       p2.addEventListener('click', () => {
         clickHandler(arrJson[i]);
       });
-
       p2.classList.toggle('names');
       div.append(div2, p2);
       div1.append(div);
@@ -56,7 +53,6 @@ fetch('./json/got.json')
     p3.textContent = 'GAME OF THRONES';
     const divActiv = document.createElement('div');
     divActiv.classList.toggle('characterInfo', 'activ');
-    divActiv.setAttribute('id', 'kell');
     
     aside.append(p3, divActiv);
     body.append(aside);
@@ -87,7 +83,6 @@ fetch('./json/got.json')
       divActiv.append(div4, div5);
       divActiv.style.display = 'block';
     }
-
 
   })
 
