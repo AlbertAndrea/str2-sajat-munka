@@ -1,0 +1,290 @@
+@use 'colors';
+@use 'mixins';
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&family=Lato&family=Mulish&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+}
+h1 {
+    font-size: 46px;
+}
+
+p {
+    font-family: 'Mulish', 'Helvetica', 'Arial', 'sans-serif';
+    font-size: 15px;
+}
+
+.footer {
+    font-family: 'Mulish', 'Helvetica', 'Arial', 'sans-serif';
+    color: colors.$white-bg-text;
+    text-align: center;
+    padding: 5px;
+    background-color: colors.$footer-bg;
+
+    a {
+        color: colors.$white-bg-text;
+        text-decoration: none;
+        
+        &:hover {
+            color: colors.$yellow-bg-text;
+            text-decoration: none;
+        }
+     }
+}
+
+main {
+    margin-top: 30px;
+}
+
+nav {
+    z-index: 10;
+    box-shadow: 0 0 10px #aaaaaa; 
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+
+    div {
+        align-items: flex-start;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+        @media screen and (min-width: 40em) {
+            align-items: center;
+        }
+
+        ul {
+            display: none;
+            flex-direction: column;
+            list-style: none;
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+    
+            @media screen and (min-width: 40em) {
+                display: flex;
+                flex-direction: row;
+                width: auto;
+            }
+        
+            li {
+                text-align: center;
+            
+                a {
+                    color: #222;
+                    display: block;
+                    line-height: 1rem;
+                    padding: 1rem;
+                    text-decoration: none;
+                    color: colors.$grey-text;
+                }   
+            }
+        }
+    
+        input[type="checkbox"] {
+            display: none;
+
+            &:checked + ul {
+                display: flex;
+            }
+        }
+
+        label {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            flex-wrap: wrap;
+            height: 1.5rem;
+            padding: 0.75rem;
+            width: 1.5rem;
+
+            @media screen and (min-width: 40em) {
+                    display: none;
+            }
+        }
+
+        span {
+            background: #222;
+            display: block;
+            height: 2px;
+            width: 1.5rem;
+        }
+    }
+}
+
+body {
+    background-image: url('/img/bg-pattern.png'), linear-gradient(90deg, colors.$body-bg1, colors.$body-bg2);
+}
+
+.section1-bg {
+    @include mixins.bg-alt(colors.$yellow-bg-text);
+}
+
+.section3-bg {
+    background-image: url('/img/bg-cta.jpg');
+    background-image: linear-gradient();
+    background-position: center;
+    opacity: 0.8; 
+}
+
+.white-bg {
+    @include mixins.bg-alt(colors.$white-bg-text);
+    a {
+        text-decoration: none;
+        color: colors.$grey-text;
+
+    &:hover {
+        color: colors.$grey-text;
+        text-decoration: none;
+        }
+    }
+}
+
+a {
+    color: colors.$grey-text;
+    text-decoration: none;
+    &:hover {
+        color: colors.$white-bg-text;
+        text-decoration: none;
+    }
+}
+
+
+.social-bg {
+    opacity: 90%;
+    @include mixins.bg-alt(colors.$yellow-bg-text);
+}
+
+.social-bg:hover {
+   opacity: 100%;
+}
+
+.ikons {
+    font-size: 46px;
+}
+
+.text-big1 {
+    font-size: 44px;
+}
+
+.text-big2 {
+    font-size: 31px;
+}
+
+.text-big3 {
+    font-size: 56px;
+    color: colors.$white-bg-text;
+}
+
+.phone-img{
+    width: 50%;
+}
+
+hr {
+    width: 5%;
+}
+
+.btn-hovered {
+    @include mixins.btn-alt(colors.$yellow-bg-text, colors.$white-bg-text);     
+    transition: background-color 300ms, border-color 300ms;
+}
+
+.btn-basic {
+    @include mixins.btn-alt(colors.$yellow-bg-text, colors.$white-bg-text); 
+}
+
+
+.phone-img-demo-screen {
+    height: 650px;
+
+    @media (min-width: 992px) {
+            height: 500px;
+    }
+}
+
+.phone-img-demo-screen2 {
+    height: 950px;
+
+    @media (min-width: 992px) {
+            height: 500px;
+    }
+}
+
+.demo-screen-img {
+    position: absolute;
+    left: 29%;
+    width: 42%;
+    top: 12%;
+
+    @media (min-width: 992px) {
+            position: absolute;
+            left: 29%;
+            width: 42%;
+            top: 8%;
+    }
+}
+
+.demo-screen-img2 {
+    position: absolute;
+    left: 28%;
+    width: 44%;
+    top: 9%;
+
+    @media (min-width: 992px) {
+            position: absolute;
+            left: 53%;
+            width: 42%;
+            top: 10%;
+    }
+}
+
+.card {
+    border: none;
+    position: relative;
+    left: 33%;
+
+    @media (min-width: 992px) {
+            border: none;
+    }
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+
+    &:hover {
+        opacity: 0.7;
+    }
+  }
+  
+.fa-facebook {
+    background: #3B5998;
+    color: colors.$white-bg-text;
+}
+  
+.fa-twitter {
+    background: #55ACEE;
+    color: colors.$white-bg-text;
+}
+  
+.fa-google {
+    background: #dd4b39;
+    color: colors.$white-bg-text;
+}
+
+
