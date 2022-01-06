@@ -123,7 +123,7 @@ nav {
 }
 
 body {
-    background-image: url('/img/bg-pattern.png'), linear-gradient(90deg, colors.$body-bg1, colors.$body-bg2);
+    background-image: url('../../img/bg-pattern.png'), linear-gradient(90deg, colors.$body-bg1, colors.$body-bg2);
 }
 
 .section1-bg {
@@ -131,7 +131,7 @@ body {
 }
 
 .section3-bg {
-    background-image: url('/img/bg-cta.jpg');
+    background-image: url('../../img/bg-cta.jpg');
     background-image: linear-gradient();
     background-position: center;
     opacity: 0.8; 
