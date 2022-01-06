@@ -37,6 +37,9 @@ fetch('./json/got.json')
       img1.setAttribute('width', '70px');
       img1.setAttribute('height', '70px');
       div2.append(img1);
+      div2.addEventListener('click', () => {
+        clickHandler(arrJson[i]);
+      });
       const p2 = document.createElement('p');
       p2.textContent = arrJson[i].name;
       p2.addEventListener('click', () => {
@@ -61,7 +64,7 @@ fetch('./json/got.json')
       divActiv.textContent = " ";
       const picture = document.createElement('img');
       picture.classList.toggle('picture');
-      picture.setAttribute("src", a.picture || './assets/pictures/placeholder_got.jpg');
+      picture.setAttribute("src", a.picture || '../../assets/pictures/placeholder_got.jpg');
       picture.setAttribute("alt", a.name);
       picture.setAttribute('width', '82%');
       picture.setAttribute("style", "border: 2px; border-style: solid; border-color: darkgrey");
@@ -73,7 +76,7 @@ fetch('./json/got.json')
       div4.append(p4);
       const houseImg = document.createElement('img');
       houseImg.classList.toggle('houseImg');
-      houseImg.setAttribute("src", './assets/houses/${a.house}.png');
+      houseImg.setAttribute("src", '../../assets/houses/${a.house}.png');
       houseImg.setAttribute("alt", a.house || '');
       div4.append(houseImg);
       const div5 = document.createElement('div');
