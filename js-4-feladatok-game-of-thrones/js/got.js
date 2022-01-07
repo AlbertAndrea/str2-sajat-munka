@@ -76,7 +76,7 @@ fetch('./json/got.json')
       div4.append(p4);
       const houseImg = document.createElement('img');
       houseImg.classList.toggle('houseImg');
-      houseImg.setAttribute("src", '../../assets/houses/${a.house}.png');
+      houseImg.setAttribute("src", `../../assets/houses/${a.house}.png`);
       houseImg.setAttribute("alt", a.house || '');
       div4.append(houseImg);
       const div5 = document.createElement('div');
